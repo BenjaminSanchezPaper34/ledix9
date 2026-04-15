@@ -1,0 +1,166 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="ledix9.com" resolutions="1x" timestamp="1768550724410">
+  <folder name="css">
+    <file name="site_global.css" crc="4061967667"/>
+    <file name="master_b-gabarit.css" crc="489070613" ref="index:la-carte---dejeuner:la-carte---brunch:la-carte---diner:reservation"/>
+    <file name="index.css" crc="4118578213" ref="index"/>
+    <file name="la-carte---dejeuner.css" crc="460566677" ref="la-carte---dejeuner"/>
+    <file name="la-carte---brunch.css" crc="15064931" ref="la-carte---brunch"/>
+    <file name="la-carte---diner.css" crc="171929453" ref="la-carte---diner"/>
+    <file name="reservation.css" crc="3930191201" ref="reservation"/>
+  </folder>
+  <folder name="fonts">
+    <file name="sf-pro-display-thin-webfont.woff" crc="9171628"/>
+    <file name="sf-pro-display-thin-webfont.eot" crc="3819781378"/>
+    <file name="sf-pro-display-thin-webfont.svg" crc="4028363159"/>
+    <file name="outfit-regular-webfont.woff" crc="3944101014"/>
+    <file name="outfit-regular-webfont.eot" crc="175980864"/>
+    <file name="outfit-regular-webfont.svg" crc="4278112825"/>
+    <file name="sf-pro-display-light-webfont.woff" crc="400594250"/>
+    <file name="sf-pro-display-light-webfont.eot" crc="3877575897"/>
+    <file name="sf-pro-display-light-webfont.svg" crc="425251153"/>
+    <file name="sf-pro-display-bold-webfont.woff" crc="92900330"/>
+    <file name="sf-pro-display-bold-webfont.eot" crc="3847729850"/>
+    <file name="sf-pro-display-bold-webfont.svg" crc="4021242965"/>
+    <file name="sf-pro-display-semibold-webfont.woff" crc="3971633789"/>
+    <file name="sf-pro-display-semibold-webfont.eot" crc="4145266979"/>
+    <file name="sf-pro-display-semibold-webfont.svg" crc="62610422"/>
+    <file name="sf-pro-display-regular-webfont.woff" crc="237760250"/>
+    <file name="sf-pro-display-regular-webfont.eot" crc="125583448"/>
+    <file name="sf-pro-display-regular-webfont.svg" crc="470116927"/>
+    <file name="sf-pro-display-heavy-webfont.woff" crc="133919298"/>
+    <file name="sf-pro-display-heavy-webfont.eot" crc="219979764"/>
+    <file name="sf-pro-display-heavy-webfont.svg" crc="137814638"/>
+    <file name="sf-pro-display-medium-webfont.woff" crc="4039368995"/>
+    <file name="sf-pro-display-medium-webfont.eot" crc="3758326568"/>
+    <file name="sf-pro-display-medium-webfont.svg" crc="21313989"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+    <file name="museutils.js" crc="3939489907" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+    <file name="museconfig.js" crc="128606099" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+    <file name="jquery.watch.js" crc="522499760" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="phone>index:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+    <file name="webpro.js" crc="3856315280" ref="phone>index:index"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="phone>index:index"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="phone>index:index"/>
+    <file name="touchswipe.js" crc="3888935200" ref="phone>index:index"/>
+    <file name="jquery.scrolleffects.js" crc="312044820" ref="phone>index:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch"/>
+    <file name="require.js" crc="4177726516" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation"/>
+  </folder>
+  <folder name="images">
+    <file name="logo-blanc-ledix9.svg" crc="236652279" seo="true" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+    </file>
+    <file name="logo-blanc-ledix9_poster_.png" crc="315783576" ref="phone>index"/>
+    <file name="instagram-blanc-ledix9.svg" crc="318083388" ref="phone>index:index"/>
+    <file name="instagram-blanc-ledix9_poster_u270.png" crc="50465998" ref="phone>index:index"/>
+    <file name="facebook-blanc-ledix9.svg" crc="521601987" ref="phone>index:index"/>
+    <file name="facebook-blanc-ledix9_poster_u284.png" crc="523809070" ref="phone>index:index"/>
+    <file name="golf-800x2048-ledix9.jpg" crc="522964620" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cotedeboeuf-1500x1500-ledix9.jpg" crc="516602497" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sole-1500x1500-ledix9.jpg" crc="179977084" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tartare-1500x1500-ledix9.jpg" crc="4134903221" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="meule-1500x1500-ledix9.jpg" crc="3971626209" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="brunch-800x2048-ledix9-u4234-fr.jpg" crc="90344959" ref="phone>index"/>
+    <file name="chiens-ledix9-crop-u3887.png" crc="4241495702" seo="true" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch">
+      <caption webpage="index" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+    </file>
+    <file name="logoblanc-paper34.svg" crc="3970129298" seo="true" ref="phone>index:phone>reservation:phone>la-carte---dejeuner:phone>la-carte---diner:phone>la-carte---brunch:index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation">
+      <caption webpage="index" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+    </file>
+    <file name="logoblanc-paper34_poster_.png" crc="50960925" ref="phone>index"/>
+    <file name="dejeuner-ledix9-u4704-fr.jpg" crc="35434813" ref="phone>la-carte---dejeuner"/>
+    <file name="drone-ledix9-u5153-fr.jpg" crc="4276569162" ref="phone>la-carte---diner"/>
+    <file name="fond-brunch-ledix9-u5318-fr.jpg" crc="328948065" ref="phone>la-carte---brunch"/>
+    <file name="favicon.ico" crc="207764931" ref="index"/>
+    <file name="flechegauche-ledix9.svg" crc="4224082659" ref="index"/>
+    <file name="flechegauche-ledix9_poster_u548.png" crc="4041696819" ref="index"/>
+    <file name="flechedroite-ledix9.svg" crc="3997246405" ref="index"/>
+    <file name="flechedroite-ledix9_poster_u556.png" crc="3938539659" ref="index"/>
+    <file name="brunch-800x2048-ledix9.jpg" crc="294205360" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="boncadeau-ledix9.jpg" crc="238756501" ref="index">
+      <caption webpage="index" alt="Bon cadeau Le Dix9 Envie de faire plaisir simplement ? Le bon cadeau Le Dix9 est une attention idéale pour toutes les occasions. Le montant est libre, à utiliser sur l’ensemble de la carte du restaurant, pour un déjeuner, un dîner ou un brunch du dimanche. Un cadeau gourmand, à offrir ou à s’offrir, toute l’année."/>
+    </file>
+    <file name="chiens-ledix9-crop-u5616.png" crc="4086125364" seo="true" ref="index:la-carte---dejeuner:la-carte---diner:la-carte---brunch:reservation">
+      <caption webpage="index" alt=""/>
+      <caption webpage="la-carte---diner" alt=""/>
+      <caption webpage="reservation" alt=""/>
+      <caption webpage="la-carte---brunch" alt=""/>
+      <caption webpage="la-carte---dejeuner" alt=""/>
+    </file>
+    <file name="dejeuner-ledix9.jpg" crc="378643197" ref="la-carte---dejeuner">
+      <caption webpage="la-carte---dejeuner" alt=""/>
+    </file>
+    <file name="drone-ledix9.jpg" crc="4270233173" ref="la-carte---diner">
+      <caption webpage="la-carte---diner" alt=""/>
+    </file>
+    <file name="fond-brunch-ledix9.jpg" crc="398669020" ref="la-carte---brunch">
+      <caption webpage="la-carte---brunch" alt=""/>
+    </file>
+    <file name="reservation-ledix9.jpg" crc="485675331" ref="reservation">
+      <caption webpage="reservation" alt=""/>
+    </file>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-gabarit.css" crc="486669381" ref="phone>la-carte---diner:phone>reservation:phone>la-carte---brunch:phone>la-carte---dejeuner:phone>index"/>
+      <file name="la-carte---diner.css" crc="4180363126" ref="phone>la-carte---diner"/>
+      <file name="reservation.css" crc="96263538" ref="phone>reservation"/>
+      <file name="la-carte---brunch.css" crc="459323939" ref="phone>la-carte---brunch"/>
+      <file name="la-carte---dejeuner.css" crc="4123876307" ref="phone>la-carte---dejeuner"/>
+      <file name="index.css" crc="3942865369" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="3813482056" seo="true" mt="1768550720133" redirect="true"/>
+    <file name="reservation.html" crc="4225050632" seo="true" mt="1760626759012" redirect="true"/>
+    <file name="la-carte---dejeuner.html" crc="4009367" seo="true" mt="1760945040971" redirect="true"/>
+    <file name="la-carte---diner.html" crc="4179581870" seo="true" mt="1760945171822" redirect="true"/>
+    <file name="la-carte---brunch.html" crc="3929801049" seo="true" mt="1760944886108" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="257626791" seo="true" mt="1768550504989" redirect="true"/>
+  <file name="la-carte---dejeuner.html" crc="4114350218" seo="true" mt="1767103601780" redirect="true"/>
+  <file name="la-carte---diner.html" crc="430594235" seo="true" mt="1767103601780" redirect="true"/>
+  <file name="la-carte---brunch.html" crc="198347934" seo="true" mt="1767103601780" redirect="true"/>
+  <file name="reservation.html" crc="4152586835" seo="true" mt="1767103601780" redirect="true"/>
+</manifest>
