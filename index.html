@@ -176,11 +176,79 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   }
 }
 </script>
+<!-- Organization schema (brand entity, linked from Restaurant via Restaurant @id) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.ledix9.com/#organization",
+  "name": "Le Dix9",
+  "legalName": "Le Dix9 Restaurant",
+  "url": "https://www.ledix9.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.ledix9.com/images/logo-blanc-ledix9.svg",
+    "width": 332,
+    "height": 264
+  },
+  "image": "https://www.ledix9.com/images/drone-ledix9.jpg",
+  "telephone": "+33467015612",
+  "email": "contact@ledix9.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Golf International du Cap d'Agde, 4 Avenue des Alizés",
+    "addressLocality": "Cap d'Agde",
+    "postalCode": "34300",
+    "addressRegion": "Occitanie",
+    "addressCountry": "FR"
+  },
+  "sameAs": [
+    "https://www.facebook.com/ledix9restaurant",
+    "https://www.instagram.com/ledix9restaurant/",
+    "https://www.tripadvisor.com/Restaurant_Review-g196602-d20317137-Reviews-Le_Dix_9-Cap_d_Agde_Agde_Herault_Occitanie.html"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+33467015612",
+      "contactType": "reservations",
+      "areaServed": "FR",
+      "availableLanguage": ["French", "English"]
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "contact@ledix9.com",
+      "contactType": "customer service",
+      "areaServed": "FR",
+      "availableLanguage": ["French", "English"]
+    }
+  ]
+}
+</script>
+<!-- WebSite schema with SearchAction (sitelinks search box in Google SERP) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.ledix9.com/#website",
+  "url": "https://www.ledix9.com",
+  "name": "Le Dix9",
+  "description": "Restaurant gastronomique au Cap d'Agde, entre golf et Méditerranée",
+  "inLanguage": "fr-FR",
+  "publisher": {
+    "@id": "https://www.ledix9.com/#organization"
+  }
+}
+</script>
 <!-- FAQPage schema for AI Overviews and rich results -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".reveal h1", ".reveal h2", ".rounded-corners h2"]
+  },
   "mainEntity": [
     {
       "@type": "Question",
@@ -389,7 +457,7 @@ to use and available for download at: http://adobemuseexpert.com/
      <div class="browser_width grpelem" id="u5645-bw">
       <div class="gradient" id="u5645"><!-- group -->
        <div class="clearfix" id="u5645_align_to_page">
-        <a class="nonblock nontext MuseLinkActive clip_frame grpelem" id="u5648" href="index.html"><!-- svg --><img class="svg" id="u5649" src="images/logo-blanc-ledix9.svg?crc=236652279" width="99" height="79" alt="Logo Le Dix9 — Restaurant au Cap d'Agde" data-mu-svgfallback="images/logo-blanc-ledix9_poster_.png?crc=315783576"/></a>
+        <a class="nonblock nontext MuseLinkActive clip_frame grpelem" id="u5648" href="index.html"><!-- svg --><img class="svg" id="u5649" src="images/logo-blanc-ledix9.svg?crc=236652279" width="99" height="79" alt="Logo Le Dix9 — Restaurant gastronomique au Cap d'Agde, Hérault" data-mu-svgfallback="images/logo-blanc-ledix9_poster_.png?crc=315783576"/></a>
         <a class="nonblock nontext MuseLinkActive clearfix grpelem" id="u5652-6" href="index.html"><!-- content --><p>Votre restaurant</p><p>au Cap d'Agde</p></a>
         <a class="nonblock nontext rounded-corners Bouton rgba-background clearfix grpelem" id="u5653-4" href="reservation.html"><!-- content --><p>Réservation</p></a>
         <a class="nonblock nontext Bouton rgba-background clearfix grpelem" id="u5647-4" href="la-carte---dejeuner.html"><!-- content --><p>Menu</p></a>
@@ -591,10 +659,10 @@ to use and available for download at: http://adobemuseexpert.com/
     <div id="u5611"><!-- group -->
      <div class="clearfix" id="u5611_align_to_page">
       <div class="clip_frame grpelem" id="u5614"><!-- svg -->
-       <img class="svg" id="u5615" src="images/logo-blanc-ledix9.svg?crc=236652279" width="206" height="164" alt="Logo Le Dix9 — Restaurant au Cap d'Agde" loading="lazy" data-mu-svgfallback="images/logo-blanc-ledix9_poster_.png?crc=315783576"/>
+       <img class="svg" id="u5615" src="images/logo-blanc-ledix9.svg?crc=236652279" width="206" height="164" alt="Logo Le Dix9 — Restaurant gastronomique au Cap d'Agde, Hérault" loading="lazy" data-mu-svgfallback="images/logo-blanc-ledix9_poster_.png?crc=315783576"/>
       </div>
       <div class="clip_frame grpelem" id="u5616"><!-- image -->
-       <img class="block" id="u5616_img" src="images/chiens-ledix9-crop-u5616.png?crc=4086125364" alt="Mascotte du Dix9, restaurant au Cap d'Agde" loading="lazy" width="166" height="94"/>
+       <img class="block" id="u5616_img" src="images/chiens-ledix9-crop-u5616.png?crc=4086125364" alt="Les chiens du Dix9 — restaurant accueillant au Cap d'Agde" loading="lazy" width="166" height="94"/>
       </div>
       <div class="clearfix grpelem" id="u5630-6"><!-- content -->
        <p>&nbsp;4 Av. des Alizés, 34300 Agde</p>

@@ -1,0 +1,75 @@
+# Le Dix9 — Restaurant au Cap d'Agde
+
+> Restaurant gastronomique français et méditerranéen niché au cœur du Golf International du Cap d'Agde, entre golf et mer Méditerranée. Cuisine fait maison, spécialités préparées en salle (meule de parmesan flambée, tartare, sole meunière, entrecôte). Note Google 4.8/5 sur 398 avis.
+
+## Informations pratiques
+
+- **Nom** : Le Dix9
+- **Adresse** : Golf International du Cap d'Agde, 4 Avenue des Alizés, 34300 Agde, France
+- **Téléphone** : 04 67 01 56 12 (+33 4 67 01 56 12)
+- **Email** : contact@ledix9.com
+- **Accès** : par l'entrée du Golf du Cap d'Agde
+- **Coordonnées GPS** : 43.30094, 3.50819
+- **Réservation en ligne** : https://www.ledix9.com/reservation.html
+
+## Horaires d'ouverture
+
+- **Déjeuner** : tous les jours (7j/7), 12h00 – 14h30
+- **Dîner** : du mardi au samedi, 19h00 – 22h00
+- **Brunch** : tous les dimanches (formule dédiée)
+- Ouvert toute l'année
+
+## Cartes et menus
+
+- [Carte Déjeuner](https://www.ledix9.com/la-carte---dejeuner.html) — service du midi 7j/7
+- [Carte Dîner](https://www.ledix9.com/la-carte---diner.html) — service du soir mardi-samedi
+- [Brunch du Dimanche](https://www.ledix9.com/la-carte---brunch.html) — formule dominicale
+
+## Spécialités signature (préparées en salle)
+
+1. **Meule de parmesan flambée au Grappa Cellini** — pâtes fraîches enrobées dans la meule fondue, spectacle culinaire signature
+2. **Tartare de bœuf** — préparé minute en salle, assaisonnement ajusté sous les yeux du client
+3. **Sole meunière** — levée et nappée de beurre noisette devant le client
+4. **Entrecôte (environ 1 kg)** — découpée en salle, pour le partage
+5. **Côte de bœuf** — viande premium, à partager
+
+## Cuisine
+
+- Type : française, méditerranéenne, bistronomique
+- Fait maison, produits frais
+- Adapte les plats pour allergies et intolérances (prévenir à la réservation)
+
+## Cadre
+
+- Salle climatisée contemporaine, toute l'année
+- Terrasse panoramique avec vue sur le Golf International et la Méditerranée
+- Privatisation possible pour mariages, séminaires, anniversaires, événements d'entreprise
+
+## Services
+
+- Réservation en ligne et par téléphone
+- Bons cadeaux à montant libre (déjeuner, dîner ou brunch) — achat en ligne via Stripe
+- Paiement accepté : espèces, CB, Visa, Mastercard, American Express
+- Ouvert au public, libre d'accès
+
+## Événements récurrents
+
+- **Brunch du dimanche** : chaque dimanche
+- **Soirée du Réveillon** : 31 décembre
+- **Brunch de luxe** : 1er janvier
+
+## Réseaux sociaux
+
+- Facebook : https://www.facebook.com/ledix9restaurant
+- Instagram : https://www.instagram.com/ledix9restaurant/
+- TripAdvisor : https://www.tripadvisor.com/Restaurant_Review-g196602-d20317137-Reviews-Le_Dix_9-Cap_d_Agde_Agde_Herault_Occitanie.html
+- Restaurant Guru : https://restaurantguru.com/Le-Dix-9-Agde
+- Pages Jaunes : https://www.pagesjaunes.fr/pros/54787614
+
+## Zones desservies
+
+Cap d'Agde, Agde, Marseillan, Vias, Bessan, Pinet, Florensac, Hérault, Occitanie. Le restaurant accueille golfeurs, touristes, locaux et clientèle événementielle.
+
+## À propos
+
+Le Dix9 est tenu par Jérôme et son équipe. La cuisine met l'accent sur l'expérience client : plats finalisés en salle, ambiance conviviale, attention aux détails. Le restaurant est régulièrement cité parmi les meilleures adresses du Cap d'Agde et de l'Hérault.
