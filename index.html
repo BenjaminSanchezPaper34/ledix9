@@ -172,9 +172,9 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     .no-js .reveal, .no-js .reveal-left, .no-js .reveal-scale, .no-js .stagger-item {
       opacity: 1; transform: none;
     }
-    /* Match title→paragraph spacing from "Brunch" section onto "Ça se passe sous vos yeux" title→carousel */
-    #u713 { height: 30px !important; }
-    #pamphletu352 { margin-top: 0 !important; }
+    /* Brunch-style internal spacing between "Ça se passe sous vos yeux" title and carousel */
+    /* Carousel z-index (79) is higher than title (60) — must push carousel below title bottom */
+    #pamphletu352 { margin-top: 220px !important; }
   </style>
  </head>
  <body>
