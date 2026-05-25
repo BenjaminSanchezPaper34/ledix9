@@ -12,6 +12,110 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "desktop"
+        }
+      ],
+      "destination": "/phone/index.html"
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "desktop"
+        }
+      ],
+      "destination": "/phone/index.html"
+    },
+    {
+      "source": "/la-carte---dejeuner.html",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "desktop"
+        }
+      ],
+      "destination": "/phone/la-carte---dejeuner.html"
+    },
+    {
+      "source": "/la-carte---diner.html",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "desktop"
+        }
+      ],
+      "destination": "/phone/la-carte---diner.html"
+    },
+    {
+      "source": "/la-carte---brunch.html",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "desktop"
+        }
+      ],
+      "destination": "/phone/la-carte---brunch.html"
+    },
+    {
+      "source": "/reservation.html",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "desktop"
+        }
+      ],
+      "destination": "/phone/reservation.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
