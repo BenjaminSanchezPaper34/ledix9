@@ -453,13 +453,17 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     @media (prefers-reduced-motion: reduce) {
       .reveal, .reveal-scale, .stagger-item { opacity: 1; transform: none; transition: none; }
     }
-    /* "Le déjeuner" title moved outside menu box, centered on hero gradient like dîner/brunch */
+    /* "Le déjeuner" title moved outside menu box, centered on hero gradient like dîner/brunch.
+       Match dîner/brunch positions: title top=330, menu box top=408 */
     #u2857_align_to_page #u2873-5 {
       position: relative;
       margin-right: -10000px;
       left: 350px;
-      margin-top: 195px;
+      margin-top: 329px;
     }
+    /* Uniformize with dîner/brunch: remove empty top space, push menu box to y=408 */
+    #u2839 { padding-top: 0 !important; margin-top: 408px !important; }
+    #u2906 { display: none !important; }
   </style>
  </head>
  <body>
