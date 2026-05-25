@@ -31,7 +31,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link media="only screen and (max-width: 370px)" rel="alternate" href="https://www.ledix9.com/phone/index.html"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
   <title>Le Dix9 | Restaurant au Cap d'Agde — Déjeuner, Dîner, Brunch</title>
-  <meta name="description" content="Le Dix9, restaurant au Cap d'Agde entre golf et Méditerranée. Déjeuner 7j/7, dîner jeudi-samedi, brunch du dimanche au Cap d'Agde vue golf. Cuisine fait maison, meule de parmesan flambée, terrasse panoramique."/>
+  <meta name="description" content="Le Dix9, restaurant au Cap d'Agde entre golf et Méditerranée. Déjeuner 7j/7, dîner mardi-samedi, brunch du dimanche au Cap d'Agde vue golf. Cuisine fait maison, meule de parmesan flambée, terrasse panoramique."/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="canonical" href="https://www.ledix9.com/"/>
   <!-- Open Graph -->
@@ -67,10 +67,22 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "@id": "https://www.ledix9.com/#restaurant",
   "name": "Le Dix9",
-  "image": "https://www.ledix9.com/images/drone-ledix9.jpg",
+  "alternateName": "Restaurant Le Dix9 Cap d'Agde",
+  "slogan": "Votre restaurant au Cap d'Agde, entre golf et Méditerranée",
+  "description": "Restaurant gastronomique au Cap d'Agde niché au cœur du Golf International. Cuisine fait maison française et méditerranéenne, meule de parmesan flambée et tartare préparé en salle. Déjeuner 7j/7, dîner du mardi au samedi, brunch du dimanche.",
+  "image": [
+    "https://www.ledix9.com/images/drone-ledix9.jpg",
+    "https://www.ledix9.com/images/dejeuner-ledix9.jpg",
+    "https://www.ledix9.com/images/cotedeboeuf-1500x1500-ledix9.jpg",
+    "https://www.ledix9.com/images/fond-brunch-ledix9.jpg"
+  ],
+  "logo": "https://www.ledix9.com/images/logo-blanc-ledix9.svg",
   "url": "https://www.ledix9.com",
-  "telephone": "+33467260089",
+  "telephone": "+33467015612",
+  "email": "contact@ledix9.com",
+  "keywords": "restaurant Cap d'Agde, restaurant Agde, brunch dimanche Cap d'Agde, restaurant golf Cap d'Agde, restaurant terrasse vue golf, restaurant gastronomique Hérault, cuisine fait maison Agde",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Golf International du Cap d'Agde, 4 Avenue des Alizés",
@@ -81,11 +93,22 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 43.2927,
-    "longitude": 3.5158
+    "latitude": 43.30094,
+    "longitude": 3.50819
   },
-  "servesCuisine": ["Française", "Méditerranéenne"],
+  "hasMap": "https://www.google.com/maps/place/Le+Dix9/@43.30094,3.50819,17z",
+  "areaServed": [
+    {"@type": "City", "name": "Cap d'Agde"},
+    {"@type": "City", "name": "Agde"},
+    {"@type": "City", "name": "Marseillan"},
+    {"@type": "City", "name": "Vias"},
+    {"@type": "AdministrativeArea", "name": "Hérault"},
+    {"@type": "AdministrativeArea", "name": "Occitanie"}
+  ],
+  "servesCuisine": ["Française", "Méditerranéenne", "Bistronomique"],
   "priceRange": "€€-€€€",
+  "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express",
+  "currenciesAccepted": "EUR",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -104,29 +127,132 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     "@type": "AggregateRating",
     "ratingValue": "4.8",
     "reviewCount": "398",
-    "bestRating": "5"
+    "bestRating": "5",
+    "worstRating": "1"
   },
   "sameAs": [
     "https://www.facebook.com/ledix9restaurant",
-    "https://www.instagram.com/ledix9restaurant/"
+    "https://www.instagram.com/ledix9restaurant/",
+    "https://www.tripadvisor.com/Restaurant_Review-g196602-d20317137-Reviews-Le_Dix_9-Cap_d_Agde_Agde_Herault_Occitanie.html",
+    "https://restaurantguru.com/Le-Dix-9-Agde",
+    "https://www.pagesjaunes.fr/pros/54787614"
   ],
   "acceptsReservations": "True",
+  "smokingAllowed": false,
+  "publicAccess": true,
   "menu": "https://www.ledix9.com/la-carte---dejeuner.html",
   "hasMenu": [
     {
       "@type": "Menu",
       "name": "Carte Déjeuner",
-      "url": "https://www.ledix9.com/la-carte---dejeuner.html"
+      "url": "https://www.ledix9.com/la-carte---dejeuner.html",
+      "inLanguage": "fr-FR"
     },
     {
       "@type": "Menu",
       "name": "Carte Dîner",
-      "url": "https://www.ledix9.com/la-carte---diner.html"
+      "url": "https://www.ledix9.com/la-carte---diner.html",
+      "inLanguage": "fr-FR"
     },
     {
       "@type": "Menu",
       "name": "Brunch du Dimanche",
-      "url": "https://www.ledix9.com/la-carte---brunch.html"
+      "url": "https://www.ledix9.com/la-carte---brunch.html",
+      "inLanguage": "fr-FR"
+    }
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.ledix9.com/reservation.html",
+      "inLanguage": "fr-FR",
+      "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Réservation au Dix9"
+    }
+  }
+}
+</script>
+<!-- FAQPage schema for AI Overviews and rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Où se trouve le restaurant Le Dix9 au Cap d'Agde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le Dix9 est situé au cœur du Golf International du Cap d'Agde, au 4 Avenue des Alizés, 34300 Agde. L'accès se fait par l'entrée du golf. Le restaurant offre une vue panoramique exceptionnelle entre golf et Méditerranée."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels sont les horaires du Dix9 ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le Dix9 est ouvert pour le déjeuner 7 jours sur 7 de 12h à 14h30, pour le dîner du mardi au samedi de 19h à 22h, et propose un brunch chaque dimanche. Le restaurant accueille les clients toute l'année."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il réserver au restaurant Le Dix9 ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, la réservation est fortement recommandée, en particulier pour le brunch du dimanche et le dîner. Vous pouvez réserver en ligne sur ledix9.com/reservation.html ou par téléphone au 04 67 01 56 12."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le Dix9 propose-t-il un brunch le dimanche ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, chaque dimanche le Dix9 propose un brunch gourmand avec une carte dédiée : boissons chaudes, jus pressés, œufs bénédicte ou florentine, toast saumon avocat, pancakes et douceurs maison. Le brunch est servi face au golf du Cap d'Agde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles sont les spécialités du Dix9 ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les plats signature du Dix9 sont préparés en salle, devant les clients : la meule de parmesan flambée au Grappa Cellini avec pâtes fraîches, le tartare de bœuf assaisonné minute, la sole meunière nappée de beurre noisette, l'entrecôte d'environ 1 kg découpée pour le partage, et la côte de bœuf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le restaurant a-t-il une terrasse vue golf ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le Dix9 dispose d'une grande terrasse offrant une vue panoramique sur le Golf International du Cap d'Agde et la Méditerranée. La salle climatisée intérieure est également ouverte toute l'année."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le Dix9 accepte-t-il les allergies et intolérances alimentaires ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le Dix9 accueille volontiers les clients ayant des allergies ou intolérances. Il suffit de prévenir l'équipe lors de la réservation ou à l'arrivée — la cuisine s'adaptera à vos besoins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on privatiser Le Dix9 pour un événement ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le Dix9 peut être privatisé pour vos événements (mariage, séminaire, anniversaire, repas d'entreprise). Pour toute demande de privatisation, contactez contact@ledix9.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le Dix9 propose-t-il des bons cadeaux ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, le Dix9 propose des bons cadeaux à montant libre, valables sur l'ensemble de la carte (déjeuner, dîner, brunch). L'achat se fait directement en ligne sur le site."
+      }
     }
   ]
 }
@@ -475,7 +601,7 @@ to use and available for download at: http://adobemuseexpert.com/
        <p>Entrée par le Golf du Cap d'Agde</p>
       </div>
       <div class="clearfix grpelem" id="u5631-4"><!-- content -->
-       <p>04 67 01 56 12</p>
+       <p><a class="nonblock" href="tel:+33467015612" style="color:inherit;text-decoration:none">04 67 01 56 12</a></p>
       </div>
       <a class="nonblock nontext museBGSize grpelem" id="u5632" href="https://www.instagram.com/ledix9restaurant/" target="_blank"><!-- simple frame --></a>
       <a class="nonblock nontext museBGSize grpelem" id="u5633" href="https://www.facebook.com/ledix9restaurant" target="_blank"><!-- simple frame --></a>
