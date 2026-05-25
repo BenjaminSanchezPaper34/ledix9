@@ -5,17 +5,20 @@
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2018.1.1.386"/>
   
-  <script type="text/javascript">   // Modern mobile redirect — UA + viewport check (fallback after Vercel server-side rewrite)
+  <script type="text/javascript">   // Modern mobile redirect — UA + viewport check (fallback after Vercel server-side redirect)
 (function() {
-  if (location.pathname.indexOf('/phone/') === 0) return;
-  if (location.search.indexOf('desktop') !== -1) return;
-  if (document.cookie.indexOf('inbrowserediting=true') !== -1) return;
-  var byUA = /Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  var byViewport = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
-  if (byUA || byViewport) {
-    document.write('<style>body{visibility:hidden}</style>');
-    location.replace('phone/la-carte---dejeuner.html' + (location.search || '') + (location.hash || ''));
-  }
+  try {
+    if (location.pathname.indexOf('/phone/') === 0) return;
+    if (location.search.indexOf('desktop') !== -1) return;
+    if (document.cookie.indexOf('inbrowserediting=true') !== -1) return;
+    var ua = navigator.userAgent || '';
+    var byUA = /iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini/i.test(ua);
+    var byViewport = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+    if (byUA || byViewport) {
+      var target = '/phone/la-carte---dejeuner.html' + (location.search || '') + (location.hash || '');
+      if (location.replace) location.replace(target); else location.href = target;
+    }
+  } catch (e) {}
 })();
 
 // Update the 'nojs'/'js' class on the html node
@@ -450,6 +453,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     @media (prefers-reduced-motion: reduce) {
       .reveal, .reveal-scale, .stagger-item { opacity: 1; transform: none; transition: none; }
     }
+    /* "Le déjeuner" title moved outside menu box, centered on hero gradient like dîner/brunch */
+    #u2857_align_to_page #u2873-5 {
+      position: relative;
+      margin-right: -10000px;
+      left: 350px;
+      margin-top: 195px;
+    }
   </style>
  </head>
  <body>
@@ -493,9 +503,13 @@ to use and available for download at: http://adobemuseexpert.com/
      <div class="browser_width grpelem" id="u2857-bw">
       <div class="gradient" id="u2857"><!-- group -->
        <div class="clearfix" id="u2857_align_to_page">
+        <div class="clearfix grpelem" id="u2873-5"><!-- content -->
+         <p id="u2873-2">Le déjeuner</p>
+         <p id="u2873-3">&nbsp;</p>
+        </div>
         <div class="size_fixed grpelem" id="u5523"><!-- custom html -->
-         
-            
+
+
         </div>
        </div>
       </div>
@@ -504,10 +518,6 @@ to use and available for download at: http://adobemuseexpert.com/
       <div class="gradient" id="u2900"><!-- simple frame --></div>
      </div>
      <div class="rounded-corners clearfix grpelem" id="u2839"><!-- column -->
-      <div class="clearfix colelem" id="u2873-5"><!-- content -->
-       <p id="u2873-2">Le déjeuner</p>
-       <p id="u2873-3">&nbsp;</p>
-      </div>
       <div class="colelem" id="u2906"><!-- content --></div>
       <div class="clearfix colelem" id="u2611"><!-- column -->
        <div class="clearfix colelem" id="u2612-5"><!-- content -->

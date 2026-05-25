@@ -10,16 +10,14 @@
       ],
       "destination": "https://www.ledix9.com/$1",
       "permanent": true
-    }
-  ],
-  "rewrites": [
+    },
     {
       "source": "/",
       "has": [
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+          "value": "(?i).*(iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
         }
       ],
       "missing": [
@@ -28,7 +26,8 @@
           "key": "desktop"
         }
       ],
-      "destination": "/phone/index.html"
+      "destination": "/phone/index.html",
+      "permanent": false
     },
     {
       "source": "/index.html",
@@ -36,7 +35,7 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+          "value": "(?i).*(iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
         }
       ],
       "missing": [
@@ -45,7 +44,8 @@
           "key": "desktop"
         }
       ],
-      "destination": "/phone/index.html"
+      "destination": "/phone/index.html",
+      "permanent": false
     },
     {
       "source": "/la-carte---dejeuner.html",
@@ -53,7 +53,7 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+          "value": "(?i).*(iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
         }
       ],
       "missing": [
@@ -62,7 +62,8 @@
           "key": "desktop"
         }
       ],
-      "destination": "/phone/la-carte---dejeuner.html"
+      "destination": "/phone/la-carte---dejeuner.html",
+      "permanent": false
     },
     {
       "source": "/la-carte---diner.html",
@@ -70,7 +71,7 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+          "value": "(?i).*(iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
         }
       ],
       "missing": [
@@ -79,7 +80,8 @@
           "key": "desktop"
         }
       ],
-      "destination": "/phone/la-carte---diner.html"
+      "destination": "/phone/la-carte---diner.html",
+      "permanent": false
     },
     {
       "source": "/la-carte---brunch.html",
@@ -87,7 +89,7 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+          "value": "(?i).*(iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
         }
       ],
       "missing": [
@@ -96,7 +98,8 @@
           "key": "desktop"
         }
       ],
-      "destination": "/phone/la-carte---brunch.html"
+      "destination": "/phone/la-carte---brunch.html",
+      "permanent": false
     },
     {
       "source": "/reservation.html",
@@ -104,7 +107,7 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Mobile|iPhone|iPad|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
+          "value": "(?i).*(iPhone|iPod|Android|BlackBerry|webOS|IEMobile|Opera Mini).*"
         }
       ],
       "missing": [
@@ -113,7 +116,8 @@
           "key": "desktop"
         }
       ],
-      "destination": "/phone/reservation.html"
+      "destination": "/phone/reservation.html",
+      "permanent": false
     }
   ],
   "headers": [
@@ -129,6 +133,19 @@
         {
           "key": "X-Robots-Tag",
           "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.html)?",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "User-Agent"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
     }
