@@ -175,7 +175,15 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     /* Brunch-style internal spacing between "Ça se passe sous vos yeux" title and carousel */
     /* Carousel z-index (79) is higher than title (60) — must push carousel below title bottom */
     #pamphletu352 { margin-top: 220px !important; }
-    /* Hero video: fill the full container so it always extends past the Réservation CTA */
+    /* Hero: inner container follows video 16:9 ratio responsively,
+       with a min-height that guarantees the Réservation CTA (~720px) stays inside.
+       Only u2519 — NOT u2519-bw — to preserve Muse's browser_width 0.01px hack. */
+    #u2519-bw { min-height: 760px !important; }
+    #u2519 {
+      aspect-ratio: 16 / 9 !important;
+      min-height: 760px !important;
+      height: auto !important;
+    }
     #u2519 video {
       position: absolute !important;
       inset: 0 !important;
