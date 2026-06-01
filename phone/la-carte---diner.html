@@ -209,6 +209,30 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     @media (prefers-reduced-motion: reduce) {
       .reveal, .reveal-scale, .stagger-item { opacity: 1; transform: none; transition: none; }
     }
+
+    /* === Carte dîner mars 2026 mobile — helper classes répliquant le style Muse === */
+    .d9m-sec { width: 320px; margin-left: 30px; position: relative; }
+    .d9m-title {
+      width: 320px; min-height: 62px; padding: 10px 0;
+      line-height: 31px; text-align: center; font-size: 24px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 700; position: relative;
+    }
+    .d9m-row { width: 0.01px; position: relative; }
+    .d9m-name {
+      width: 242px; min-height: 0; padding: 13px 0;
+      line-height: 26px; font-size: 20px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 300;
+      position: relative; margin-right: -10000px;
+    }
+    .d9m-name .n { font-size: 20px; line-height: 26px; color: #FFFFFF; }
+    .d9m-name .d { font-size: 16px; line-height: 21px; color: #7F7F7F; margin-top: 2px; }
+    .d9m-price {
+      width: 78px; min-height: 0; padding: 13px 0;
+      line-height: 26px; text-align: right; font-size: 20px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 400;
+      position: relative; margin-right: -10000px; left: 242px;
+    }
+    .d9m-spacer { width: 320px; height: 22px; position: relative; }
   </style>
  </head>
  <body>
@@ -278,246 +302,155 @@ to use and available for download at: http://adobemuseexpert.com/
      </div>
     </div>
     <div class="colelem" id="u4845"><!-- content --></div>
-    <div class="clearfix colelem" id="u4862"><!-- column -->
-     <div class="clearfix colelem" id="u4863-5"><!-- content -->
-      <p>À partager ou pas</p>
-      <p>&nbsp;</p>
-     </div>
-     <div class="clearfix colelem" id="pu4865-12"><!-- group -->
-      <div class="clearfix grpelem" id="u4865-12"><!-- content -->
-       <p id="u4865-2">Nos trouvailles :</p>
-       <p id="u4865-4">conserverie espagnole</p>
-       <p id="u4865-6">Sardines</p>
-       <p id="u4865-8">ou ventrèche de thon</p>
-       <p id="u4865-10">Anchois fumés</p>
+         <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>À partager ou pas</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Boîte de sardines Pilchardus de Galice</p></div>
+       <div class="clearfix grpelem d9m-price"><p>16,00 €</p></div>
       </div>
-      <div class="clearfix grpelem" id="u4864-9"><!-- content -->
-       <p>&nbsp;</p>
-       <p>&nbsp;</p>
-       <p>16,00 €</p>
-       <p>&nbsp;</p>
-       <p>17,00 €</p>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Boîte de ventrèche de thon</p><p class="d">Partie ventrale du thon.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>16,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Boîte d’anchois fumés au bois de hêtre</p><p class="d">Mer Cantabrique. Conserverie Rosalita, Espagne.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>17,00 €</p></div>
       </div>
      </div>
-    </div>
-    <div class="colelem" id="u4878"><!-- content --></div>
-    <div class="clearfix colelem" id="u4894-5"><!-- content -->
-     <p>Nos entrées</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4896-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4896-6"><!-- content -->
-      <p id="u4896-2">Foie gras maison</p>
-      <p id="u4896-4">Brioche et compotée d'oignons rouges.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos entrées</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Cuisses de Kermit (grenouilles) en persillade</p><p class="d">6 pièces.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>14,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Gravelax de truite</p><p class="d">Vinaigrette aux fruits jaunes, toast de beurre au citron.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>19,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Ris de veau en brioche et morilles</p><p class="d">Sauce pétillante.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>23,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Foie gras maison au gin</p><p class="d">Toasts de brioche façon grand-mère. 2 belles tranches à partager ou pas !</p></div>
+       <div class="clearfix grpelem d9m-price"><p>25,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4850-4"><!-- content -->
-      <p>25,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos plats terre</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Entrecôte de veau grillée</p><p class="d">Sauce à la bière et érable, mélange 4 céréales. Origine France, Maison Chazal Toulouse.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>34,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tartare de veau « Vitello Tonato »</p><p class="d">Frites maison et salade verte. Origine France, Maison Chazal Toulouse.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>30,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tataki de magret de canard</p><p class="d">Petit épeautre à la cantonaise. IGP du Sud-Ouest.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>32,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tartare de bœuf au parmesan</p><p class="d">Pesto, brisures de truffes, frites maison et salade verte. Charolais VBF.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>30,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tournedos Rossini</p><p class="d">Pommes boulangère. VBF.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>42,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">L’entrecôte gargantuesque 1 kg à partager</p><p class="d">Sauce roquefort et poivre, frites et salade. VBF.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>95,00 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="clearfix colelem" id="pu4876-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4876-6"><!-- content -->
-      <p id="u4876-2">Cuisses de Kermit</p>
-      <p id="u4876-4">(grenouilles) en persillade.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos plats mer et eau douce</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Cuisses de Kermit (grenouilles) en persillade</p><p class="d">12 pièces, frites fraîches maison.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>29,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Saint-Jacques en risotto</p><p class="d">Crème de Saint-Jacques.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>32,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Gambas grillées ou flambées au pastis</p><p class="d">Mezze rigatoni, pesto crème de pistache.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>35,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Sole de roche meunière (400/500 g)</p><p class="d">Beurre citronné, écrasé de pommes de terre, légumes. Préparée devant vous.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>49,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4930-4"><!-- content -->
-      <p>28,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Plat signature du Dix9</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">La meule de parmesan 24/36 mois</p><p class="d">Flambée à la Grappa, crème de truffe 83 % et brisures, linguine. Produits « Plantin ».</p></div>
+       <div class="clearfix grpelem d9m-price"><p>34,00 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="clearfix colelem" id="pu4925-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4925-6"><!-- content -->
-      <p id="u4925-2">Saint-Jacques poêlées</p>
-      <p id="u4925-4">au beurre blanc.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Végétarien</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Assiette de légumes selon l’humeur de la cheffe</p></div>
+       <div class="clearfix grpelem d9m-price"><p>25,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4884-4"><!-- content -->
-      <p>27,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos desserts</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Chou chantilly chocolat ou caramel beurre salé</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tarte aux pommes et sa glace</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Meringuisu</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Moelleux au chocolat (sans gluten)</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Pavlova fruits du moment, cœur de glace</p></div>
+       <div class="clearfix grpelem d9m-price"><p>11,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Brioche perdue et sa glace</p></div>
+       <div class="clearfix grpelem d9m-price"><p>11,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Baba au rhum et son shot de rhum</p></div>
+       <div class="clearfix grpelem d9m-price"><p>13,90 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="colelem" id="u4853"><!-- content --></div>
-    <div class="clearfix colelem" id="u4866-5"><!-- content -->
-     <p>Nos plats</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu5239-6"><!-- group -->
-     <div class="clearfix grpelem" id="u5239-6"><!-- content -->
-      <p id="u5239-2">Entrecôte de veau</p>
-      <p id="u5239-4">sauce forestière, aubergines, courgettes jaunes, pommes de terre.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Glaces &amp; sorbets</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Glaces — 1 / 2 / 3 boules</p><p class="d">Artisan des Saveurs à Gigean (Hérault). Chouchou de Provence, fougasse d’Aigues-Mortes, touron, zézette de Sète.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>3,50 / 6,00 / 9,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Sorbets</p><p class="d">Mentheuse, açaï.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>&nbsp;</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Supplément chantilly, sauce chocolat ou caramel</p></div>
+       <div class="clearfix grpelem d9m-price"><p>1,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u5246-4"><!-- content -->
-      <p>33,50 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5242-6"><!-- group -->
-     <div class="clearfix grpelem" id="u5242-6"><!-- content -->
-      <p id="u5242-2">Ris de veau</p>
-      <p id="u5242-4">accompagnement du moment.</p>
-     </div>
-     <div class="clearfix grpelem" id="u5240-4"><!-- content -->
-      <p>35,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5777-6"><!-- group -->
-     <div class="clearfix grpelem" id="u5777-6"><!-- content -->
-      <p id="u5777-2">Tartare de bœuf au couteau</p>
-      <p id="u5777-4">Parmesan, pesto, brisures de truffes, frites maison, salade.</p>
-     </div>
-     <div class="clearfix grpelem" id="u5245-4"><!-- content -->
-      <p>30,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5253-6"><!-- group -->
-     <div class="clearfix grpelem" id="u5253-6"><!-- content -->
-      <p id="u5253-2">Entrecôte</p>
-      <p id="u5253-4">Frites, sauce poivre ou Roquefort.</p>
-     </div>
-     <div class="clearfix grpelem" id="u5254-4"><!-- content -->
-      <p>47,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5238-4"><!-- group -->
-     <div class="clearfix grpelem" id="u5238-4"><!-- content -->
-      <p>95,00 €</p>
-     </div>
-     <div class="rounded-corners clearfix grpelem" id="u5248-9"><!-- content -->
-      <p id="u5248-2">L’entrecôte gargantuesque</p>
-      <p id="u5248-4">1 kg à partager, sauce roquefort et poivre,</p>
-      <p id="u5248-6">frites et salade.</p>
-      <p id="u5248-7">&nbsp;</p>
-     </div>
-     <div class="rounded-corners FLOAT clearfix grpelem" id="u5309-4"><!-- content -->
-      <p>Préparé devant vous</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5232-6"><!-- group -->
-     <div class="clearfix grpelem" id="u5232-6"><!-- content -->
-      <p id="u5232-2">Gambas flambées au Ricard</p>
-      <p id="u5232-4">linguine en persillade.</p>
-     </div>
-     <div class="clearfix grpelem" id="u5234-4"><!-- content -->
-      <p>35,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5233-4"><!-- group -->
-     <div class="clearfix grpelem" id="u5233-4"><!-- content -->
-      <p>Poisson du jour</p>
-     </div>
-     <div class="clearfix grpelem" id="u5236-4"><!-- content -->
-      <p>selon arrivage</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5235-4"><!-- group -->
-     <div class="clearfix grpelem" id="u5235-4"><!-- content -->
-      <p>34,00 €</p>
-     </div>
-     <div class="rounded-corners clearfix grpelem" id="u5249-9"><!-- content -->
-      <p id="u5249-2">La meule de parmesan</p>
-      <p id="u5249-4">Celle-ci est une 24/36 mois, flambée à la Grappa, puis une sauce à base de crème</p>
-      <p id="u5249-6">et truffe dans laquelle vos linguine sont plongées.</p>
-      <p id="u5249-7">&nbsp;</p>
-     </div>
-     <div class="FLOAT rounded-corners clearfix grpelem" id="u5315-4"><!-- content -->
-      <p>Préparé devant vous</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu5244-6"><!-- group -->
-     <div class="clearfix grpelem" id="u5244-6"><!-- content -->
-      <p id="u5244-2">Assiette végétarienne</p>
-      <p id="u5244-4">légumes selon l’humeur de la cheffe.</p>
-     </div>
-     <div class="clearfix grpelem" id="u5241-4"><!-- content -->
-      <p>25,00 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4918"><!-- content --></div>
-    <div class="clearfix colelem" id="u4906-5"><!-- content -->
-     <p id="u4906-2">Nos desserts</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4914-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4914-6"><!-- content -->
-      <p>Chou chantilly chocolat</p>
-      <p>ou caramel beurre salé</p>
-     </div>
-     <div class="clearfix grpelem" id="u4844-4"><!-- content -->
-      <p>10,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4902-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4902-4"><!-- content -->
-      <p>Meringuisu</p>
-     </div>
-     <div class="clearfix grpelem" id="u4860-4"><!-- content -->
-      <p>10,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4934-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4934-6"><!-- content -->
-      <p>Moelleux au chocolat</p>
-      <p>(gluten free)</p>
-     </div>
-     <div class="clearfix grpelem" id="u4936-4"><!-- content -->
-      <p>10,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4908-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4908-4"><!-- content -->
-      <p>Pavlova inversée fruits du moment</p>
-     </div>
-     <div class="clearfix grpelem" id="u4871-4"><!-- content -->
-      <p>11,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4910-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4910-4"><!-- content -->
-      <p>Brioche perdue et sa glace</p>
-     </div>
-     <div class="clearfix grpelem" id="u4909-4"><!-- content -->
-      <p>11,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4886-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4886-4"><!-- content -->
-      <p>Baba au rhum</p>
-     </div>
-     <div class="clearfix grpelem" id="u4898-4"><!-- content -->
-      <p>13,90 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4933"><!-- content --></div>
-    <div class="clearfix colelem" id="u4919-5"><!-- content -->
-     <p>Glaces</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4923-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4923-4"><!-- content -->
-      <p>1 boule</p>
-     </div>
-     <div class="clearfix grpelem" id="u4907-4"><!-- content -->
-      <p>3,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4859-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4859-4"><!-- content -->
-      <p>2 boules</p>
-     </div>
-     <div class="clearfix grpelem" id="u4882-4"><!-- content -->
-      <p>5,50 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4849-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4849-4"><!-- content -->
-      <p>3 boules</p>
-     </div>
-     <div class="clearfix grpelem" id="u4912-4"><!-- content -->
-      <p>8,50 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u4937-10"><!-- content -->
-     <p>Parfums glaces :</p>
-     <p>vanille, fraise, chocolat, café, caramel, pistache, noix de coco, rhum raisin, noisette</p>
-     <p>Parfums sorbets :</p>
-     <p>citron, mangue, framboise, mandarine, passion</p>
-    </div>
-    <div class="colelem" id="u5754"><!-- simple frame --></div>
+     <div class="colelem" id="u5754"><!-- simple frame --></div>
     <a class="nonblock nontext Bouton rgba-background rounded-corners clearfix colelem" id="u5755-4" href="reservation.html"><!-- content --><p>Réservation</p></a>
     <div class="colelem" id="u5753"><!-- simple frame --></div>
    </div>
