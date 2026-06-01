@@ -209,6 +209,30 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     @media (prefers-reduced-motion: reduce) {
       .reveal, .reveal-scale, .stagger-item { opacity: 1; transform: none; transition: none; }
     }
+
+    /* === Carte déjeuner mars 2026 mobile — helper classes répliquant le style Muse === */
+    .d9m-sec { width: 320px; margin-left: 30px; position: relative; }
+    .d9m-title {
+      width: 320px; min-height: 62px; padding: 10px 0;
+      line-height: 31px; text-align: center; font-size: 24px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 700; position: relative;
+    }
+    .d9m-row { width: 0.01px; position: relative; }
+    .d9m-name {
+      width: 242px; min-height: 68px; padding: 10px 0;
+      line-height: 26px; font-size: 20px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 300;
+      position: relative; margin-right: -10000px;
+    }
+    .d9m-name .n { font-size: 20px; line-height: 26px; color: #FFFFFF; }
+    .d9m-name .d { font-size: 16px; line-height: 21px; color: #7F7F7F; }
+    .d9m-price {
+      width: 78px; min-height: 68px; padding: 10px 0;
+      line-height: 26px; text-align: right; font-size: 20px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 400;
+      position: relative; margin-right: -10000px; left: 242px;
+    }
+    .d9m-spacer { width: 320px; height: 24px; position: relative; }
   </style>
  </head>
  <body>
@@ -280,353 +304,215 @@ to use and available for download at: http://adobemuseexpert.com/
      </div>
     </div>
     <div class="colelem" id="u4470"><!-- content --></div>
-    <div class="clearfix colelem" id="u4450"><!-- column -->
-     <div class="clearfix colelem" id="u4451-5"><!-- content -->
-      <p>À partager ou pas</p>
-      <p>&nbsp;</p>
-     </div>
-     <div class="clearfix colelem" id="pu4452-15"><!-- group -->
-      <div class="clearfix grpelem" id="u4452-15"><!-- content -->
-       <p id="u4452-2">Saucisson entier ou pâté</p>
-       <p id="u4452-3">&nbsp;</p>
-       <p id="u4452-5">Nos trouvailles :</p>
-       <p id="u4452-7">conserverie espagnole</p>
-       <p id="u4452-9">Sardines</p>
-       <p id="u4452-11">ou ventrèche de thon</p>
-       <p id="u4452-13">Anchois fumés</p>
+         <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>À partager ou pas</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Saucisson entier ou pâté</p></div>
+       <div class="clearfix grpelem d9m-price"><p>12,00 €</p></div>
       </div>
-      <div class="clearfix grpelem" id="u4453-12"><!-- content -->
-       <p>12,00 €</p>
-       <p>&nbsp;</p>
-       <p>&nbsp;</p>
-       <p>&nbsp;</p>
-       <p>16,00 €</p>
-       <p>&nbsp;</p>
-       <p>17,00 €</p>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Nos trouvailles : conserverie espagnole</p></div>
+       <div class="clearfix grpelem d9m-price"><p>&nbsp;</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Sardines ou ventrèche de thon</p></div>
+       <div class="clearfix grpelem d9m-price"><p>16,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Anchois fumés</p></div>
+       <div class="clearfix grpelem d9m-price"><p>17,00 €</p></div>
       </div>
      </div>
-    </div>
-    <div class="colelem" id="u4469"><!-- content --></div>
-    <div class="clearfix colelem" id="u4456-5"><!-- content -->
-     <p>Nos salades repas</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4459-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4459-6"><!-- content -->
-      <p id="u4459-2">Ave Caesar</p>
-      <p id="u4459-4">Poulet cuit en basse température, œuf mollet, parmesan, croûtons et sauce Caesar anchois.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos salades repas</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Ave Caesar</p><p class="d">Poulet cuit en basse température, œuf mollet, parmesan, croûtons, sauce Caesar aux anchois.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>22,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Salade Seguin</p><p class="d">Chèvre croustillant, pan con tomate, jambon serrano, pignons, salade.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>21,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Asiatique</p><p class="d">Bol de coleslaw asiatique et poulet frit, sauce sriracha et hoisin, riz.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>21,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4460-4"><!-- content -->
-      <p>22,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos plats</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Carottes rôties au miel et harissa</p><p class="d">Crème de féta et houmous, accompagnées de travers de porc caramélisés.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>22,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tartare de bœuf au couteau</p><p class="d">Préparé par nous, pour vous, à table. Frites fraîches maison, salade.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>23,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Entrecôte</p><p class="d">Frites fraîches maison, sauce poivre ou roquefort.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>29,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Ris de veau en vol-au-vent</p><p class="d">Accompagnés de légumes de saison.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>23,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Escalope de veau à la milanaise</p><p class="d">Linguine nature, tomate ou gorgonzola.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>28,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Coquillettes crème de truffe d’hiver (83 %)</p><p class="d">Brisures de truffe et carpaccio, chiffonnade de jambon à la truffe sur pain toasté.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>31,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Perla Bianca</p><p class="d">Malfadine, stracciatella au gorgonzola en burrata (artisan local de Montpellier), noix, chips de charcuterie.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>25,50 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Fish &amp; chips</p><p class="d">Sauce tartare et frites fraîches maison.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>22,00 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="clearfix colelem" id="pu4463-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4463-6"><!-- content -->
-      <p id="u4463-2">Salade Seguin</p>
-      <p id="u4463-4">Chèvre du Moissac (Cévennes) sur pan con tomate, magret fumé, speck, pignons, padrons, salade.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos burgers</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Le burger Cremoso</p><p class="d">Steak haché façon boucher, oignons confits, salade iceberg, poitrine fumée, camembert di bufala, pain frais du boulanger, frites fraîches maison.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>24,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Le burger du Dix9 (pas « McDo »)</p><p class="d">Steak haché façon boucher, oignons, salade, cheddar, bacon, avocat, pain frais du boulanger, frites fraîches maison. (Supplément cheddar lover +3,00 €)</p></div>
+       <div class="clearfix grpelem d9m-price"><p>22,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Le burger M’dame</p><p class="d">Steak haché façon boucher, oignons, salade, cheddar, œufs, pain frais du boulanger, frites fraîches maison.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>23,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4465-4"><!-- content -->
-      <p>23,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos croques</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Croque-Monsieur</p><p class="d">Bruschetta, béchamel, jambon blanc fumé, fromage. Accompagné d’une salade verte.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>17,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Croque-Madame</p><p class="d">Bruschetta, béchamel, jambon blanc fumé, fromage, 2 œufs au plat. Accompagné d’une salade verte.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>19,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Croque Deluxe à la truffe</p><p class="d">Bruschetta, béchamel, jambon blanc fumé, fromage, crème de truffe d’hiver 83 %, brisures et carpaccio de truffe.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>23,50 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="clearfix colelem" id="pu4458-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4458-6"><!-- content -->
-      <p id="u4458-2">Salade de la mer gourmande</p>
-      <p id="u4458-4">Saumon fumé et stracciatella sur focaccia, gravelax de filet de truite, salade d’endives rouges, avocat, crevettes panko, sweet chili sauce.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos omelettes</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Nature</p><p class="d">Accompagnée d’une salade verte.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>14,30 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Duo — 2 ingrédients au choix</p><p class="d">Ingrédients : jambon, fromage, champignons frais, herbes fraîches.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>15,80 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Extra complète</p><p class="d">Jambon, fromage, oignon, herbes fraîches, champignons frais.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>18,50 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Deluxe</p><p class="d">Crème de truffe d’été 89 %, brisures et carpaccio.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>23,50 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4457-4"><!-- content -->
-      <p>25,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Suppléments</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Sauce roquefort, poivre ou tartare</p></div>
+       <div class="clearfix grpelem d9m-price"><p>3,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Bol de salade</p></div>
+       <div class="clearfix grpelem d9m-price"><p>5,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Portion de frites fraîches maison</p></div>
+       <div class="clearfix grpelem d9m-price"><p>5,50 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Bol de légumes ou pâtes</p></div>
+       <div class="clearfix grpelem d9m-price"><p>6,00 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="colelem" id="u4471"><!-- content --></div>
-    <div class="clearfix colelem" id="u4411-5"><!-- content -->
-     <p>Nos croques</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4412-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4412-6"><!-- content -->
-      <p id="u4412-2">Croque-Monsieur, salade</p>
-      <p id="u4412-4">Bruschetta, béchamel, jambon blanc fumé, fromage.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Les 50/50</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">½ Croque-Monsieur et salade verte</p><p class="d">Blanc de poulet, parmesan en copeaux.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>17,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">½ Croque végétarien et salade verte</p><p class="d">Pesto, mozzarella, avocat, parmesan en copeaux.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>16,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">½ Salade de chèvre croustillant + bol de pâtes ou frites</p><p class="d">Pignons, jambon cru de Serrano sur pan con tomate.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>19,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4408-4"><!-- content -->
-      <p>17,00 €</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Nos desserts</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Chou chantilly chocolat ou caramel beurre salé</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Tarte aux pommes et boule de glace</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Meringuisu</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Moelleux au chocolat (sans gluten, farine de riz)</p></div>
+       <div class="clearfix grpelem d9m-price"><p>10,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Pavlova cœur glacé</p></div>
+       <div class="clearfix grpelem d9m-price"><p>11,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Brioche perdue et sa glace</p></div>
+       <div class="clearfix grpelem d9m-price"><p>11,90 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Baba au rhum et son shot de rhum</p></div>
+       <div class="clearfix grpelem d9m-price"><p>13,90 €</p></div>
+      </div>
      </div>
-    </div>
-    <div class="clearfix colelem" id="pu4413-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4413-6"><!-- content -->
-      <p id="u4413-2">Croque-Madame (2 œufs), salade</p>
-      <p id="u4413-4">Bruschetta, béchamel, jambon blanc fumé, fromage.</p>
+     <div class="clearfix colelem d9m-spacer"></div>
+     <div class="clearfix colelem d9m-sec">
+      <div class="clearfix colelem d9m-title"><p>Glaces</p></div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Glaces — 1 / 2 / 3 boules</p><p class="d">Vanille, fraise, chocolat suisse, café, caramel, pistache, noix de coco, rhum raisin.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>3,50 / 6,00 / 9,00 €</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Sorbets</p><p class="d">Citron, mangue, framboise, passion.</p></div>
+       <div class="clearfix grpelem d9m-price"><p>&nbsp;</p></div>
+      </div>
+      <div class="clearfix colelem d9m-row">
+       <div class="clearfix grpelem d9m-name"><p class="n">Suppléments chantilly, sauce chocolat ou caramel</p></div>
+       <div class="clearfix grpelem d9m-price"><p>1,00 €</p></div>
+      </div>
      </div>
-     <div class="clearfix grpelem" id="u4409-4"><!-- content -->
-      <p>19,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4410-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4410-6"><!-- content -->
-      <p id="u4410-2">Croque Deluxe à la truffe, salade</p>
-      <p id="u4410-4">Bruschetta, béchamel, jambon blanc fumé, fromage.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4414-4"><!-- content -->
-      <p>23,00 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4472"><!-- content --></div>
-    <div class="clearfix colelem" id="u4401-5"><!-- content -->
-     <p>Nos omelettes</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4397-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4397-6"><!-- content -->
-      <p id="u4397-2">Nature</p>
-      <p id="u4397-4">salade verte.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4399-4"><!-- content -->
-      <p>14,30 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4396-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4396-6"><!-- content -->
-      <p id="u4396-2">Duo</p>
-      <p id="u4396-4">2 ingrédients au choix, salade verte.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4404-4"><!-- content -->
-      <p>15,80 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4394-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4394-6"><!-- content -->
-      <p id="u4394-2">Extra complète</p>
-      <p id="u4394-4">jambon, fromage, tomates, oignons, herbes fraîches, champignons frais, salade verte.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4398-4"><!-- content -->
-      <p>18,30 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4402-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4402-6"><!-- content -->
-      <p id="u4402-2">Deluxe</p>
-      <p id="u4402-4">à la crème de truffe, salade verte.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4400-4"><!-- content -->
-      <p>23,20 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u4406-4"><!-- content -->
-     <p>Ingrédients : jambon, fromage, champignons frais, herbes fraîches.</p>
-    </div>
-    <div class="clearfix colelem" id="pu4403-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4403-6"><!-- content -->
-      <p>Portion de frites maison</p>
-      <p>ou légumes</p>
-     </div>
-     <div class="clearfix grpelem" id="u4395-4"><!-- content -->
-      <p>5,50 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4405-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4405-4"><!-- content -->
-      <p>Bol de salade</p>
-     </div>
-     <div class="clearfix grpelem" id="u4393-4"><!-- content -->
-      <p>5,00 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4473"><!-- content --></div>
-    <div class="clearfix colelem" id="u4418-5"><!-- content -->
-     <p>Nos burgers</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4421-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4421-6"><!-- content -->
-      <p id="u4421-2">Cremoso</p>
-      <p id="u4421-4">Steak haché façon boucher, oignons confits, salade iceberg, pointe fumée, camembert di bufala, pain frais du boulanger, pommes de terre grenailles.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4422-4"><!-- content -->
-      <p>24,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4419-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4419-6"><!-- content -->
-      <p id="u4419-2">Le burger du Dix9 (pas “McDo”)</p>
-      <p id="u4419-4">Steak haché façon boucher, oignons, salade, cheddar, bacon, avocat, pain frais du boulanger, frites maison.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4423-4"><!-- content -->
-      <p>22,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4420-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4420-6"><!-- content -->
-      <p id="u4420-2">Le burger M’dame</p>
-      <p id="u4420-4">Steak haché façon boucher, oignons, salade, cheddar, œufs, pain frais du boulanger, frites fraîches maison.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4416-4"><!-- content -->
-      <p>23,00 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4474"><!-- content --></div>
-    <div class="clearfix colelem" id="u4445-5"><!-- content -->
-     <p>Nos plats</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4449-9"><!-- group -->
-     <div class="rounded-corners clearfix grpelem" id="u4449-9"><!-- content -->
-      <p id="u4449-2">Tartare de bœuf</p>
-      <p id="u4449-4">au couteau</p>
-      <p id="u4449-6">Frites maison, salade.</p>
-      <p id="u4449-7">&nbsp;</p>
-     </div>
-     <div class="clearfix grpelem" id="u4443-4"><!-- content -->
-      <p>23,00 €</p>
-     </div>
-     <div class="rounded-corners FLOAT clearfix grpelem" id="u4439-4"><!-- content -->
-      <p>Préparé devant vous</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4440-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4440-6"><!-- content -->
-      <p id="u4440-2">Entrecôte</p>
-      <p id="u4440-4">Frites, sauce poivre ou Roquefort.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4437-4"><!-- content -->
-      <p>29,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4442-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4442-6"><!-- content -->
-      <p id="u4442-2">Escalope de veau à la “milanese”</p>
-      <p id="u4442-4">Linguine nature, tomate ou gorgonzola.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4448-4"><!-- content -->
-      <p>28,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4438-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4438-6"><!-- content -->
-      <p id="u4438-2">Coquillettes et chiffonnade</p>
-      <p id="u4438-4">Coquillettes crème de truffe, chiffonnade de jambon à la truffe sur pain toasté.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4446-4"><!-- content -->
-      <p>29,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4434-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4434-6"><!-- content -->
-      <p id="u4434-2">Fish &amp; Chips</p>
-      <p id="u4434-4">Sauce tartare et frites maison.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4441-4"><!-- content -->
-      <p>22,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4447-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4447-6"><!-- content -->
-      <p id="u4447-2">Tentacules d’encornet</p>
-      <p id="u4447-4">Salade romaine et tomate grillées, sauce chimichurri.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4436-4"><!-- content -->
-      <p>25,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4444-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4444-6"><!-- content -->
-      <p id="u4444-2">Ravioles d’artichauts</p>
-      <p id="u4444-4">Crème, champignons grillés.</p>
-     </div>
-     <div class="clearfix grpelem" id="u4435-4"><!-- content -->
-      <p>26,00 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4468"><!-- content --></div>
-    <div class="clearfix colelem" id="u4384-5"><!-- content -->
-     <p id="u4384-2">Nos desserts</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4386-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4386-6"><!-- content -->
-      <p>Chou chantilly chocolat</p>
-      <p>ou caramel beurre salé</p>
-     </div>
-     <div class="clearfix grpelem" id="u4385-4"><!-- content -->
-      <p>10,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4387-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4387-4"><!-- content -->
-      <p>Meringuisu</p>
-     </div>
-     <div class="clearfix grpelem" id="u4388-4"><!-- content -->
-      <p>10,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4379-6"><!-- group -->
-     <div class="clearfix grpelem" id="u4379-6"><!-- content -->
-      <p>Moelleux au chocolat</p>
-      <p>(gluten free)</p>
-     </div>
-     <div class="clearfix grpelem" id="u4390-4"><!-- content -->
-      <p>10,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4381-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4381-4"><!-- content -->
-      <p>Pavlova inversée fruits du moment</p>
-     </div>
-     <div class="clearfix grpelem" id="u4383-4"><!-- content -->
-      <p>11,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4391-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4391-4"><!-- content -->
-      <p>Brioche perdue et sa glace</p>
-     </div>
-     <div class="clearfix grpelem" id="u4382-4"><!-- content -->
-      <p>11,90 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4389-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4389-4"><!-- content -->
-      <p>Baba au rhum</p>
-     </div>
-     <div class="clearfix grpelem" id="u4380-4"><!-- content -->
-      <p>13,90 €</p>
-     </div>
-    </div>
-    <div class="colelem" id="u4466"><!-- content --></div>
-    <div class="clearfix colelem" id="u4427-5"><!-- content -->
-     <p>Glaces</p>
-     <p>&nbsp;</p>
-    </div>
-    <div class="clearfix colelem" id="pu4431-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4431-4"><!-- content -->
-      <p>1 boule</p>
-     </div>
-     <div class="clearfix grpelem" id="u4428-4"><!-- content -->
-      <p>3,00 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4432-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4432-4"><!-- content -->
-      <p>2 boules</p>
-     </div>
-     <div class="clearfix grpelem" id="u4425-4"><!-- content -->
-      <p>5,50 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="pu4429-4"><!-- group -->
-     <div class="clearfix grpelem" id="u4429-4"><!-- content -->
-      <p>3 boules</p>
-     </div>
-     <div class="clearfix grpelem" id="u4430-4"><!-- content -->
-      <p>8,50 €</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u4426-10"><!-- content -->
-     <p>Parfums glaces :</p>
-     <p>vanille, fraise, chocolat, café, caramel, pistache, noix de coco, rhum raisin, noisette</p>
-     <p>Parfums sorbets :</p>
-     <p>citron, mangue, framboise, mandarine, passion</p>
-    </div>
-    <div class="colelem" id="u5745"><!-- simple frame --></div>
+     <div class="colelem" id="u5745"><!-- simple frame --></div>
     <a class="nonblock nontext Bouton rgba-background rounded-corners clearfix colelem" id="u5746-4" href="reservation.html"><!-- content --><p>Réservation</p></a>
     <div class="colelem" id="u5744"><!-- simple frame --></div>
    </div>
