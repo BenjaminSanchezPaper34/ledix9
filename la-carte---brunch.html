@@ -341,6 +341,62 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Brunch du Dimanche — Le Dix9 Cap d'Agde",
+  "inLanguage": "fr-FR",
+  "url": "https://www.ledix9.com/la-carte---brunch.html",
+  "offers": {
+    "@type": "Offer",
+    "name": "Formule brunch",
+    "price": "32.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock"
+  },
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Formule brunch (32 €)",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Boisson chaude",
+          "description": "Café, thé noir, thé vert, thé vert menthe, cappuccino, latte"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Jus de fruit frais",
+          "description": "Orange ou pamplemousse"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Œuf bénédicte, florentine ou du moment",
+          "description": "Bénédicte, florentine, ou préparation quotidienne du Chef"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Salade healthy"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Toast saumon avocat"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Pancakes fluffy ou brioche perdue",
+          "description": "Caramel beurre salé, chocolat ou sirop d'érable"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Fromage blanc mangue et muesli"
+        }
+      ]
+    }
+  ]
+}
+</script>
  
   <!-- Scroll Reveal Animations -->
   <style>
@@ -365,6 +421,20 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     .stagger-item.visible { opacity: 1; transform: translateY(0); }
     @media (prefers-reduced-motion: reduce) {
       .reveal, .reveal-scale, .stagger-item { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* === Formule brunch mars 2026 — styles items/descriptions === */
+    #u3391-25 .bru-price {
+      font-size: 30px; line-height: 38px; font-weight: 700; color: #FFFFFF;
+      font-family: '__SF Pro Display_5';
+    }
+    #u3391-25 .bru-item {
+      font-size: 20px; line-height: 26px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5'; font-weight: 400; margin-top: 14px;
+    }
+    #u3391-25 .bru-desc {
+      font-size: 16px; line-height: 21px; color: #7F7F7F;
+      font-family: '__SF Pro Display_5'; font-weight: 300;
     }
   </style>
  </head>
@@ -422,18 +492,21 @@ to use and available for download at: http://adobemuseexpert.com/
      <div class="rounded-corners clearfix grpelem" id="u3388"><!-- column -->
       <div class="colelem" id="u3316"><!-- content --></div>
       <div class="clearfix colelem" id="u3391-25"><!-- content -->
-       <p id="u3391-2"><span id="u3391">29,50 €</span></p>
-       <p id="u3391-3">&nbsp;</p>
-       <p id="u3391-5">Boisson chaude</p>
-       <p id="u3391-7">Jus d’orange pressée</p>
-       <p id="u3391-9">Œuf bénédicte ou florentine</p>
-       <p id="u3391-11">Bénédicte : Muffin, bacon, œuf poché, sauce hollandaise.</p>
-       <p id="u3391-13">Florentine : Œuf mollet, épinard, béchamel.</p>
-       <p id="u3391-15">Salade healthy</p>
-       <p id="u3391-17">Toast saumon avocat</p>
-       <p id="u3391-19">Pancakes</p>
-       <p id="u3391-21">Caramel beurre salé ou sirop d’érable.</p>
-       <p id="u3391-23">Fromage blanc aux fruits rouges</p>
+       <p class="bru-price">32,00 €</p>
+       <p>&nbsp;</p>
+       <p class="bru-item">Boisson chaude</p>
+       <p class="bru-desc">Café, thé noir, thé vert, thé vert menthe, cappuccino, latte</p>
+       <p class="bru-item">Jus de fruit frais</p>
+       <p class="bru-desc">Orange ou pamplemousse</p>
+       <p class="bru-item">Œuf bénédicte, florentine ou du moment</p>
+       <p class="bru-desc">Bénédicte : muffin, bacon, œuf poché, sauce hollandaise</p>
+       <p class="bru-desc">Florentine : œuf mollet, épinard, béchamel</p>
+       <p class="bru-desc">Du moment : préparation quotidienne du Chef</p>
+       <p class="bru-item">Salade healthy</p>
+       <p class="bru-item">Toast saumon avocat</p>
+       <p class="bru-item">Pancakes fluffy ou brioche perdue</p>
+       <p class="bru-desc">Caramel beurre salé, chocolat ou sirop d’érable</p>
+       <p class="bru-item">Fromage blanc mangue et muesli</p>
       </div>
       <div class="colelem" id="u3295"><!-- content --></div>
       <div class="clearfix colelem" id="u3394"><!-- column -->
