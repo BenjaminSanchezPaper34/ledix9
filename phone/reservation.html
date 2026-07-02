@@ -14,7 +14,8 @@ document.documentElement.className = document.documentElement.className.replace(
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "reservation.css"], "outOfDate":[]};
 </script>
   
-  <title>Reservation</title>
+  <title>Réservation | Le Dix9 — Restaurant au Cap d'Agde</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <meta name="description" content="Réservez votre table au Dix9 au Cap d'Agde. Réservation en ligne rapide."/>
   <link rel="canonical" href="https://www.ledix9.com/reservation.html"/>
   
@@ -112,7 +113,13 @@ to use and available for download at: http://adobemuseexpert.com/
      </div>
      <div class="rounded-corners grpelem" id="u4333"><!-- custom html -->
       <!-- Elfsight Form Builder | LE DIX9 - AGDE -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
+<script>
+/* Elfsight différé — hors chemin critique LCP */
+(function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://elfsightcdn.com/platform.js';s.async=true;document.body.appendChild(s);}
+if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventListener('load',function(){setTimeout(l,800);});}
+['scroll','touchstart','mousedown','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});
+})();
+</script>
 <div class="elfsight-app-d5fceb6c-50da-4996-8c4d-26ec6a90cbd2" data-elfsight-app-lazy></div>
      </div>
     </div>

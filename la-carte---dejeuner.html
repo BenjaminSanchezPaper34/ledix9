@@ -29,6 +29,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 </script>
   
   <link media="only screen and (max-width: 370px)" rel="alternate" href="https://www.ledix9.com/phone/la-carte---dejeuner.html"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
   <title>Carte Déjeuner | Le Dix9 — Restaurant au Cap d'Agde</title>
   <meta name="description" content="Découvrez la carte déjeuner du Dix9 au Cap d'Agde. Service midi 7j/7. Meule de parmesan flambée, tartare préparé en salle, produits frais et fait maison."/>
@@ -53,7 +54,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link rel="stylesheet" type="text/css" href="css/master_b-gabarit.css?crc=489070613"/>
   <link rel="stylesheet" type="text/css" href="css/la-carte---dejeuner.css?crc=460566677" id="pagesheet"/>
     <!--custom head HTML-->
-  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <script>
+/* Elfsight différé — hors chemin critique LCP */
+(function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://elfsightcdn.com/platform.js';s.async=true;document.body.appendChild(s);}
+if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventListener('load',function(){setTimeout(l,800);});}
+['scroll','touchstart','mousedown','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});
+})();
+</script>
   <!--HTML Widget code-->
   
 <style>

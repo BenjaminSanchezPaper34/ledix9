@@ -29,6 +29,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 </script>
   
   <link media="only screen and (max-width: 370px)" rel="alternate" href="https://www.ledix9.com/phone/index.html"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
   <title>Le Dix9 | Restaurant au Cap d'Agde — Déjeuner, Dîner, Brunch</title>
   <meta name="description" content="Le Dix9, restaurant au Cap d'Agde entre golf et Méditerranée. Déjeuner 7j/7, dîner 7j/7, brunch du dimanche au Cap d'Agde vue golf. Cuisine fait maison, meule de parmesan flambée, terrasse panoramique."/>
@@ -49,12 +50,19 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <meta name="twitter:image" content="https://www.ledix9.com/images/drone-ledix9.jpg"/>
   <!-- Preconnect -->
   <link rel="preconnect" href="https://elfsightcdn.com"/>
+  <link rel="preload" as="image" href="assets/poster-desktop.jpg"/>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4061967667"/>
   <link rel="stylesheet" type="text/css" href="css/master_b-gabarit.css?crc=489070613"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=4118578213" id="pagesheet"/>
     <!--custom head HTML-->
-  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <script>
+/* Elfsight différé — hors chemin critique LCP */
+(function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://elfsightcdn.com/platform.js';s.async=true;document.body.appendChild(s);}
+if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventListener('load',function(){setTimeout(l,800);});}
+['scroll','touchstart','mousedown','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});
+})();
+</script>
   <!--HTML Widget code-->
    
 
@@ -436,7 +444,7 @@ to use and available for download at: http://adobemuseexpert.com/
     <div class="clearfix colelem" id="pu2519"><!-- group -->
      <div class="browser_width grpelem" id="u2519-bw">
       <div class="gradient" id="u2519"><!-- custom html -->
-       <video playsinline autoplay loop muted style="width:100%; height:100%;" title="Vue aérienne du restaurant Le Dix9 au Cap d'Agde">
+       <video playsinline autoplay loop muted poster="assets/poster-desktop.jpg" style="width:100%; height:100%;" title="Vue aérienne du restaurant Le Dix9 au Cap d'Agde">
 	<source type="video/webm" src="assets/VIDEOSD.webm">
   	<source type="video/mp4" src="assets/VIDEOSD.mp4">
 </video>
