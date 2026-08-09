@@ -29,11 +29,16 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 </script>
   
   <link media="only screen and (max-width: 370px)" rel="alternate" href="https://www.ledix9.com/phone/index.html"/>
+  <link rel="manifest" href="/site.webmanifest"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
   <title>Le Dix9 | Restaurant au Cap d'Agde — Déjeuner, Dîner, Brunch</title>
   <meta name="description" content="Le Dix9, restaurant au Cap d'Agde entre golf et Méditerranée. Déjeuner 7j/7, dîner 7j/7, brunch du dimanche au Cap d'Agde vue golf. Cuisine fait maison, meule de parmesan flambée, terrasse panoramique."/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="geo.region" content="FR-34"/>
+  <meta name="geo.placename" content="Cap d'Agde, Agde"/>
+  <meta name="geo.position" content="43.30094;3.50819"/>
+  <meta name="ICBM" content="43.30094, 3.50819"/>
   <link rel="canonical" href="https://www.ledix9.com/"/>
   <!-- Open Graph -->
   <meta property="og:type" content="restaurant"/>
@@ -384,6 +389,30 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
     .no-js .reveal, .no-js .reveal-left, .no-js .reveal-scale, .no-js .stagger-item {
       opacity: 1; transform: none;
     }
+
+    /* === FAQ visible (GEO) === */
+    .d9faq {
+      width: 953px; margin-left: 61px; margin-top: 90px;
+      background: #1D1D1F; border: 1px solid #1D1D1F; border-radius: 19px;
+      padding: 40px; color: #FFFFFF;
+      font-family: '__SF Pro Display_5', -apple-system, Helvetica, Arial, sans-serif;
+    }
+    .d9faq h2 { font-size: 40px; line-height: 52px; font-weight: 600; margin: 0 0 18px; }
+    .d9faq-item { border-top: 1px solid rgba(255,255,255,0.12); }
+    .d9faq-item summary {
+      cursor: pointer; list-style: none; padding: 18px 34px 18px 0;
+      font-size: 20px; line-height: 26px; font-weight: 400; position: relative;
+    }
+    .d9faq-item summary::-webkit-details-marker { display: none; }
+    .d9faq-item summary::after {
+      content: '+'; position: absolute; right: 4px; top: 50%;
+      transform: translateY(-50%); color: #EBB638; font-size: 26px; font-weight: 300;
+      transition: transform .25s;
+    }
+    .d9faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .d9faq-item > p {
+      margin: 0; padding: 0 0 20px; font-size: 17px; line-height: 1.55; color: #9B9B9B;
+    }
     /* Brunch-style internal spacing between "Ça se passe sous vos yeux" title and carousel */
     /* Carousel z-index (79) is higher than title (60) — must push carousel below title bottom */
     #pamphletu352 { margin-top: 220px !important; }
@@ -658,6 +687,45 @@ to use and available for download at: http://adobemuseexpert.com/
     </div>
     <div class="colelem" id="u765" class="reveal-scale"><!-- custom html -->
      <div class="elfsight-app-676415ee-4df4-440b-92f7-eb1da82b4aae" data-elfsight-app-lazy></div>
+    </div>
+    <div class="clearfix colelem d9faq reveal" id="faq">
+     <h2>Questions fréquentes</h2>
+      <details class="d9faq-item">
+       <summary>Où se trouve le restaurant Le Dix9 au Cap d'Agde ?</summary>
+       <p>Le Dix9 est situé au cœur du Golf International du Cap d'Agde, au 4 Avenue des Alizés, 34300 Agde. L'accès se fait par l'entrée du golf. Le restaurant offre une vue panoramique exceptionnelle entre golf et Méditerranée.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Quels sont les horaires du Dix9 ?</summary>
+       <p>Le Dix9 est ouvert 7j/7 : déjeuner de 12h à 14h30, dîner de 19h à 22h, et brunch chaque dimanche. Le restaurant accueille les clients toute l'année.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Faut-il réserver au restaurant Le Dix9 ?</summary>
+       <p>Oui, la réservation est fortement recommandée, en particulier pour le brunch du dimanche et le dîner. Vous pouvez réserver en ligne ou par téléphone au 04 67 01 56 12.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Le Dix9 propose-t-il un brunch le dimanche ?</summary>
+       <p>Oui, chaque dimanche le Dix9 propose un brunch gourmand (32 €) avec une carte dédiée : boissons chaudes, jus pressés, œufs bénédicte ou florentine, toast saumon avocat, pancakes et douceurs maison. Le brunch est servi face au golf du Cap d'Agde.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Quelles sont les spécialités du Dix9 ?</summary>
+       <p>Les plats signature du Dix9 sont préparés en salle, devant les clients : la meule de parmesan flambée à la Grappa, le tartare de bœuf assaisonné minute, la sole meunière nappée de beurre noisette et l'entrecôte gargantuesque à partager.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Le restaurant a-t-il une terrasse vue golf ?</summary>
+       <p>Oui, le Dix9 dispose d'une grande terrasse offrant une vue panoramique sur le Golf International du Cap d'Agde et la Méditerranée. La salle climatisée intérieure est également ouverte toute l'année.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Le Dix9 accepte-t-il les allergies et intolérances alimentaires ?</summary>
+       <p>Oui, le Dix9 accueille volontiers les clients ayant des allergies ou intolérances. Il suffit de prévenir l'équipe lors de la réservation ou à l'arrivée — la cuisine s'adaptera à vos besoins.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Peut-on privatiser Le Dix9 pour un événement ?</summary>
+       <p>Oui, le Dix9 peut être privatisé pour vos événements (mariage, séminaire, anniversaire, repas d'entreprise). Pour toute demande, contactez contact@ledix9.com.</p>
+      </details>
+      <details class="d9faq-item">
+       <summary>Le Dix9 propose-t-il des bons cadeaux ?</summary>
+       <p>Oui, le Dix9 propose des bons cadeaux à montant libre, valables sur l'ensemble de la carte (déjeuner, dîner, brunch). L'achat se fait directement en ligne sur le site.</p>
+      </details>
     </div>
     <div class="colelem" id="u1165"><!-- simple frame --></div>
    </div>
