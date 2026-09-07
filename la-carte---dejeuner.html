@@ -33,13 +33,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
   <title>Carte Déjeuner | Le Dix9 — Restaurant au Cap d'Agde</title>
-  <meta name="description" content="Découvrez la carte déjeuner du Dix9 au Cap d'Agde. Service midi 7j/7. Meule de parmesan flambée, tartare préparé en salle, produits frais et fait maison."/>
+  <meta name="description" content="Découvrez la carte déjeuner du Dix9 au Cap d'Agde. Service midi du lundi au samedi, 12h–14h30. Meule de parmesan flambée, tartare préparé en salle, produits frais et fait maison."/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="canonical" href="https://www.ledix9.com/la-carte---dejeuner.html"/>
   <!-- Open Graph -->
   <meta property="og:type" content="restaurant.menu"/>
   <meta property="og:title" content="Carte Déjeuner | Le Dix9"/>
-  <meta property="og:description" content="La carte déjeuner du Dix9 au Cap d'Agde. Service midi 7j/7, cuisine fait maison."/>
+  <meta property="og:description" content="La carte déjeuner du Dix9 au Cap d'Agde. Service midi du lundi au samedi, cuisine fait maison."/>
   <meta property="og:url" content="https://www.ledix9.com/la-carte---dejeuner.html"/>
   <meta property="og:image" content="https://www.ledix9.com/images/dejeuner-ledix9.jpg"/>
   <meta property="og:locale" content="fr_FR"/>
@@ -47,7 +47,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Carte Déjeuner | Le Dix9"/>
-  <meta name="twitter:description" content="La carte déjeuner du Dix9 au Cap d'Agde. Service midi 7j/7, cuisine fait maison."/>
+  <meta name="twitter:description" content="La carte déjeuner du Dix9 au Cap d'Agde. Service midi du lundi au samedi, cuisine fait maison."/>
   <meta name="twitter:image" content="https://www.ledix9.com/images/dejeuner-ledix9.jpg"/>
   <link rel="preconnect" href="https://elfsightcdn.com"/>
   <!-- CSS -->
@@ -394,16 +394,28 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
       "opens": "12:00",
       "closes": "14:30"
     },
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "dayOfWeek": "Sunday",
+      "opens": "11:30",
+      "closes": "14:00",
+      "description": "Brunch du dimanche"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
       "opens": "19:00",
       "closes": "22:00"
     }
+  ],
+  "specialOpeningHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-08", "validThrough": "2026-09-08", "opens": "12:00", "closes": "14:30", "description": "Privatisation : fermé le soir" },
+    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-09", "validThrough": "2026-09-09", "opens": "12:00", "closes": "14:30", "description": "Privatisation : fermé le soir" },
+    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-10", "validThrough": "2026-09-10", "opens": "12:00", "closes": "14:30", "description": "Privatisation : fermé le soir" }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",

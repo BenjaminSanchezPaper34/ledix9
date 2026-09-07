@@ -33,7 +33,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
   <title>Réservation | Le Dix9 — Restaurant au Cap d'Agde</title>
-  <meta name="description" content="Réservez votre table au Dix9, restaurant au Cap d'Agde. Ouvert 7j/7 midi et soir, brunch le dimanche. Réservation en ligne rapide."/>
+  <meta name="description" content="Réservez votre table au Dix9, restaurant au Cap d'Agde. Ouvert 7j/7 le midi, du mardi au samedi le soir, brunch le dimanche 11h30–14h. Réservation en ligne rapide."/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="canonical" href="https://www.ledix9.com/reservation.html"/>
   <!-- Open Graph -->
@@ -95,16 +95,28 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
       "opens": "12:00",
       "closes": "14:30"
     },
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "dayOfWeek": "Sunday",
+      "opens": "11:30",
+      "closes": "14:00",
+      "description": "Brunch du dimanche"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
       "opens": "19:00",
       "closes": "22:00"
     }
+  ],
+  "specialOpeningHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-08", "validThrough": "2026-09-08", "opens": "12:00", "closes": "14:30", "description": "Privatisation : fermé le soir" },
+    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-09", "validThrough": "2026-09-09", "opens": "12:00", "closes": "14:30", "description": "Privatisation : fermé le soir" },
+    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-10", "validThrough": "2026-09-10", "opens": "12:00", "closes": "14:30", "description": "Privatisation : fermé le soir" }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",

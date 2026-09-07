@@ -16,7 +16,7 @@
 
 window.DIX9_ANNONCES = [
 
-  { texte: "Établissement privatisé le mardi 2 et mercredi 3 juin au soir.", jusqu: "2026-06-03" },
+  { texte: "Privatisation exceptionnelle : le restaurant est fermé le soir mardi 8, mercredi 9 et jeudi 10 septembre. Ouvert le midi.", jusqu: "2026-09-10" },
 
   // { texte: "Fermeture exceptionnelle le 15 août.", jusqu: "2026-08-15" },
 

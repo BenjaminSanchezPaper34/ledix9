@@ -14,15 +14,15 @@
 
 ## Horaires d'ouverture
 
-- **Déjeuner** : tous les jours (7j/7), 12h00 – 14h30
-- **Dîner** : tous les jours (7j/7), 19h00 – 22h00
-- **Brunch** : tous les dimanches (formule dédiée)
+- **Déjeuner** : du lundi au samedi, 12h00 – 14h30
+- **Dîner** : du mardi au samedi, 19h00 – 22h00 (fermé dimanche soir et lundi soir)
+- **Brunch** : tous les dimanches, 11h30 – 14h00 (formule dédiée 32 €)
 - Ouvert toute l'année
 
 ## Cartes et menus
 
-- [Carte Déjeuner](https://www.ledix9.com/la-carte---dejeuner.html) — service du midi 7j/7
-- [Carte Dîner](https://www.ledix9.com/la-carte---diner.html) — service du soir 7j/7
+- [Carte Déjeuner](https://www.ledix9.com/la-carte---dejeuner.html) — service du midi, lundi au samedi
+- [Carte Dîner](https://www.ledix9.com/la-carte---diner.html) — service du soir, mardi au samedi
 - [Brunch du Dimanche](https://www.ledix9.com/la-carte---brunch.html) — formule dominicale
 
 ## Spécialités signature (préparées en salle)
@@ -54,7 +54,7 @@
 
 ## Événements récurrents
 
-- **Brunch du dimanche** : chaque dimanche
+- **Brunch du dimanche** : chaque dimanche de 11h30 à 14h00
 - **Soirée du Réveillon** : 31 décembre
 - **Brunch de luxe** : 1er janvier
 
