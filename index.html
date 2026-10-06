@@ -28,11 +28,11 @@ document.documentElement.className = document.documentElement.className.replace(
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.scrolleffects.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
-  <link media="only screen and (max-width: 370px)" rel="alternate" href="https://www.ledix9.com/phone/index.html"/>
+  <link media="only screen and (max-width: 640px)" rel="alternate" href="https://www.ledix9.com/phone/index.html"/>
   <link rel="manifest" href="/site.webmanifest"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"/>
   <link rel="shortcut icon" href="images/favicon.ico?crc=207764931"/>
-  <title>Le Dix9 | Restaurant au Cap d'Agde — Déjeuner, Dîner, Brunch</title>
+  <title>Restaurant Cap d'Agde vue golf — Le Dix9 | Déjeuner, Dîner, Brunch</title>
   <meta name="description" content="Le Dix9, restaurant au Cap d'Agde entre golf et Méditerranée. Déjeuner 7j/7, dîner du mardi au samedi, brunch du dimanche 11h30–14h au Cap d'Agde vue golf. Cuisine fait maison, meule de parmesan flambée, terrasse panoramique."/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="geo.region" content="FR-34"/>
@@ -82,7 +82,7 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
   "@type": "Restaurant",
   "@id": "https://www.ledix9.com/#restaurant",
   "name": "Le Dix9",
-  "alternateName": "Restaurant Le Dix9 Cap d'Agde",
+  "alternateName": ["Restaurant Le Dix9 Cap d'Agde", "Le Dix 9", "Le Dix Neuf", "Le 19", "Restaurant Le 19 Cap d'Agde", "Restaurant du Golf du Cap d'Agde"],
   "slogan": "Votre restaurant au Cap d'Agde, entre golf et Méditerranée",
   "description": "Restaurant gastronomique au Cap d'Agde niché au cœur du Golf International. Cuisine fait maison française et méditerranéenne, meule de parmesan flambée et tartare préparé en salle. Ouvert 7j/7 le midi, du mardi au samedi le soir, brunch du dimanche de 11h30 à 14h.",
   "image": [
@@ -142,11 +142,6 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
       "opens": "19:30",
       "closes": "21:30"
     }
-  ],
-  "specialOpeningHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-08", "validThrough": "2026-09-08", "opens": "12:00", "closes": "14:00", "description": "Privatisation : fermé le soir" },
-    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-09", "validThrough": "2026-09-09", "opens": "12:00", "closes": "14:00", "description": "Privatisation : fermé le soir" },
-    { "@type": "OpeningHoursSpecification", "validFrom": "2026-09-10", "validThrough": "2026-09-10", "opens": "12:00", "closes": "14:00", "description": "Privatisation : fermé le soir" }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -422,6 +417,7 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
       transition: transform .25s;
     }
     .d9faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .d9faq-item > p a { color: #EBB638; text-decoration: underline; text-underline-offset: 3px; }
     .d9faq-item > p {
       margin: 0; padding: 0 0 20px; font-size: 17px; line-height: 1.55; color: #9B9B9B;
     }
@@ -717,11 +713,11 @@ to use and available for download at: http://adobemuseexpert.com/
       </details>
       <details class="d9faq-item">
        <summary>Le Dix9 propose-t-il un brunch le dimanche ?</summary>
-       <p>Oui, chaque dimanche le Dix9 propose un brunch gourmand (32 €) avec une carte dédiée : boissons chaudes, jus pressés, œufs bénédicte ou florentine, toast saumon avocat, pancakes et douceurs maison. Le brunch est servi face au golf du Cap d'Agde.</p>
+       <p>Oui, chaque dimanche le Dix9 propose un <a href="la-carte---brunch.html">brunch gourmand (32 €)</a> avec une carte dédiée : boissons chaudes, jus pressés, œufs bénédicte ou florentine, toast saumon avocat, pancakes et douceurs maison. Le brunch est servi face au golf du Cap d'Agde.</p>
       </details>
       <details class="d9faq-item">
        <summary>Quelles sont les spécialités du Dix9 ?</summary>
-       <p>Les plats signature du Dix9 sont préparés en salle, devant les clients : la meule de parmesan flambée à la Grappa, le tartare de bœuf assaisonné minute, la sole meunière nappée de beurre noisette et l'entrecôte gargantuesque à partager.</p>
+       <p>Les plats signature du Dix9 sont préparés en salle, devant les clients : la meule de parmesan flambée à la Grappa, le tartare de bœuf assaisonné minute, la sole meunière nappée de beurre noisette et l'entrecôte gargantuesque à partager. À découvrir sur la <a href="la-carte---dejeuner.html">carte du déjeuner</a> et la <a href="la-carte---diner.html">carte du dîner</a>.</p>
       </details>
       <details class="d9faq-item">
        <summary>Le restaurant a-t-il une terrasse vue golf ?</summary>
