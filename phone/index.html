@@ -24,6 +24,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <meta name="ICBM" content="43.30094, 3.50819"/>
   <link rel="canonical" href="https://www.ledix9.com/"/>
   <!-- CSS -->
+  <link rel="preload" as="image" href="../assets/poster-mobile.jpg" fetchpriority="high"/>
   <link rel="stylesheet" type="text/css" href="../css/site_global.css?crc=4061967667"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-gabarit.css?crc=486669381"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=3942865369" id="pagesheet"/>
@@ -139,8 +140,8 @@ to use and available for download at: http://adobemuseexpert.com/
      <div class="browser_width grpelem" id="u3910-bw">
       <div class="gradient" id="u3910"><!-- custom html -->
        <video playsinline autoplay loop muted poster="../assets/poster-mobile.jpg" style="width:100%; height:100%;" title="Vue du restaurant Le Dix9 au Cap d'Agde">
-	<source type="video/webm" src="../assets/VIDEOMSD.webm">
-  	<source type="video/mp4" src="../assets/VIDEOMSD.mp4">
+	<source type="video/webm" data-src="../assets/VIDEOMSD.webm?v=2">
+  	<source type="video/mp4" data-src="../assets/VIDEOMSD.mp4?v=2">
 </video>
       </div>
      </div>
@@ -521,6 +522,11 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
   })();
   </script>
   <!-- Annonces (fermetures / privatisations) — éditer annonces.js -->
+<script>
+/* Vidéo d'accueil chargée après l'affichage : le poster est l'élément LCP */
+(function(){function go(){var v=document.querySelector('#u3910 video');if(!v)return;[].forEach.call(v.querySelectorAll('source[data-src]'),function(s){s.src=s.getAttribute('data-src');});v.load();var p=v.play();if(p&&p.catch)p.catch(function(){});}
+if(document.readyState==='complete'){setTimeout(go,200);}else{window.addEventListener('load',function(){setTimeout(go,200);});}})();
+</script>
   <script src="../annonces.js?v=4"></script>
    </body>
 </html>
