@@ -10,6 +10,7 @@
        supprime sa ligne — OU ne fais rien : elle disparaît
        AUTOMATIQUEMENT le lendemain de la date "jusqu".
 
+   ▸ Lien optionnel : ajouter  lien: "/page.html", libelle: "Texte du lien"
    ▸ "jusqu" = dernier jour d'affichage (format AAAA-MM-JJ).
    ▸ Liste vide []  →  aucun bandeau ne s'affiche.
    ═══════════════════════════════════════════════════════════════════ */
@@ -18,7 +19,7 @@ window.DIX9_ANNONCES = [
 
   { texte: "Privatisation exceptionnelle : le restaurant est fermé le soir mardi 8, mercredi 9 et jeudi 10 septembre. Ouvert le midi.", jusqu: "2026-09-10" },
 
-  { texte: "Réveillon du 31 décembre : <a href=\"/reveillon-saint-sylvestre.html\" style=\"color:inherit\">le menu de la Saint-Sylvestre</a> est en ligne. Brunch le 1er janvier.", jusqu: "2026-12-31" },
+  { texte: "Réveillon du 31 décembre et brunch du 1er janvier.", lien: "/reveillon-saint-sylvestre.html", libelle: "Voir le menu de la Saint-Sylvestre", jusqu: "2026-12-31" },
 
   // { texte: "Fermeture exceptionnelle le 15 août.", jusqu: "2026-08-15" },
 
@@ -59,7 +60,9 @@ window.DIX9_ANNONCES = [
     var items = list.map(function (a) {
       return '<p style="margin:0;padding:3px 0;">' +
              '<span style="color:#EBB638;font-weight:700;letter-spacing:.3px;">&#9888;&nbsp;</span>' +
-             String(a.texte).replace(/</g, "&lt;") + '</p>';
+             String(a.texte).replace(/</g, "&lt;") +
+             (a.lien ? ' <a href="' + String(a.lien).replace(/"/g, "") + '" style="color:#EBB638;text-decoration:underline;text-underline-offset:3px;">' +
+               String(a.libelle || "En savoir plus").replace(/</g, "&lt;") + '</a>' : '') + '</p>';
     }).join("");
     note.innerHTML = items;
 
