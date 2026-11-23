@@ -18,6 +18,8 @@ window.DIX9_ANNONCES = [
 
   { texte: "Privatisation exceptionnelle : le restaurant est fermé le soir mardi 8, mercredi 9 et jeudi 10 septembre. Ouvert le midi.", jusqu: "2026-09-10" },
 
+  { texte: "Réveillon du 31 décembre : <a href=\"/reveillon-saint-sylvestre.html\" style=\"color:inherit\">le menu de la Saint-Sylvestre</a> est en ligne. Brunch le 1er janvier.", jusqu: "2026-12-31" },
+
   // { texte: "Fermeture exceptionnelle le 15 août.", jusqu: "2026-08-15" },
 
 ];

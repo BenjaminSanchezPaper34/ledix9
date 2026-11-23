@@ -34,6 +34,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     #page { margin: 0 auto; }
     #u3910 video { object-fit: cover; }
 
+    .d9-evt{color:inherit;text-decoration:underline;text-decoration-color:#EBB638;text-underline-offset:4px;}
     /* === FAQ visible (GEO) mobile === */
     .d9mfaq {
       width: 300px; margin-left: 30px; margin-top: 60px;
@@ -333,11 +334,11 @@ if(document.readyState==='complete'){setTimeout(l,300);}else{window.addEventList
     </div>
     <div class="rounded-corners clearfix colelem" id="u4260-6"><!-- content -->
      <p id="u4260-2">31 décembre</p>
-     <p id="u4260-4">La soirée du réveillon.</p>
+     <p id="u4260-4"><a class="d9-evt" href="../reveillon-saint-sylvestre.html">Le menu de la Saint-Sylvestre</a></p>
     </div>
     <div class="rounded-corners clearfix colelem" id="u4261-6"><!-- content -->
      <p id="u4261-2">1 janvier</p>
-     <p id="u4261-4">Le brunch de luxe.</p>
+     <p id="u4261-4"><a class="d9-evt" href="../reveillon-saint-sylvestre.html">Le brunch du jour de l'An</a></p>
     </div>
     <div class="colelem" id="u4271"><!-- content --></div>
     <div class="browser_width colelem" id="u4279-bw">
@@ -527,6 +528,6 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 (function(){function go(){var v=document.querySelector('#u3910 video');if(!v)return;[].forEach.call(v.querySelectorAll('source[data-src]'),function(s){s.src=s.getAttribute('data-src');});v.load();var p=v.play();if(p&&p.catch)p.catch(function(){});}
 if(document.readyState==='complete'){setTimeout(go,200);}else{window.addEventListener('load',function(){setTimeout(go,200);});}})();
 </script>
-  <script src="../annonces.js?v=4"></script>
+  <script src="../annonces.js?v=5"></script>
    </body>
 </html>
